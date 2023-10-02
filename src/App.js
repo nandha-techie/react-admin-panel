@@ -61,7 +61,10 @@ function App() {
       path: "/login",
       element: <Login />,
     },
-  ])
+  ],
+  {
+    basename: "/react-admin-panel",
+  })
 
   return <RouterProvider router={router} />
 }
