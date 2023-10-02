@@ -1,0 +1,40 @@
+
+.topBox h2{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+.list{
+    .listItem{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+
+        .user{
+            display: flex;
+            gap: 2rem;
+
+            img{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+            }
+
+            .userText{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                .username{
+                    font-size: 1.5rem;
+                }
+                .email{
+                    font-size: 1.2rem;
+                }    
+            }
+        }
+        .amount{
+            font-weight: 500;
+        }
+    }
+}

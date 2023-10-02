@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.menu{
+ 
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 2rem;
+
+        .title{
+            color: $soft-color;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+
+            @include lg{
+                display: none;
+            }
+        }
+        .listItem{
+            display: flex;
+            gap: 10px;
+        }
+        .listItemTitle{
+            @include lg{
+                display: none;
+            } 
+        }
+    }
+}

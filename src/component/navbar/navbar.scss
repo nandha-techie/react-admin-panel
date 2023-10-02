@@ -1,0 +1,62 @@
+@import "../../styles/responsive.scss";
+
+
+nav{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        h3{
+            font-size: 1.6rem;
+        }
+    }
+
+    .navIcons{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .icon{
+            @include sm{
+                display: none;
+            }
+        }
+    }
+
+    .notification{
+        position: relative;
+
+        span{
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            background-color: red;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    .userProfile{
+        display: flex;
+        gap: 1rem;
+
+        img{
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            object-fit: cover
+        }
+    }
+}
