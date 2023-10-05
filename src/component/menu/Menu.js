@@ -11,7 +11,7 @@ const Menu = ()=>{
                         <span className='title'>{ item.title }</span>
                         { item.listItems.map((listItem) => (
                             <Link to={listItem.url} className='listItem' key={ listItem.id } >
-                                <img src={`images/${listItem.icon}`} alt="" />
+                                <img src={`${process.env.PUBLIC_URL}/images/${listItem.icon}`} alt="" />
                                 <span className="listItemTitle">{ listItem.title }</span>
                             </Link>
                             )) 

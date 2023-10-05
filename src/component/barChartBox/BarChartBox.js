@@ -5,7 +5,6 @@ import './barChartBox.scss';
 
 const BarChartBox = (props)=>{
 
-    console.log(props.chartData)
     return(
         <div className='barChartBox'>
             
